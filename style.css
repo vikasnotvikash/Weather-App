@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 85%;
+    background: linear-gradient(rgb(93, 93, 227), #dadada);
+}
+
+.card {
+    max-width: 45%;
+    background: linear-gradient(135deg, #e837c1, #d2e82d);
+    color: #fff;
+    margin: 70px auto;
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 21px 14px 200px 200px;
+    -webkit-border-radius: 21px 14px 200px 200px;
+    -moz-border-radius: 21px 14px 200px 200px;
+}
+
+.search {
+    width: 65%;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 15px;
+    height: 50px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    padding: 15px 17px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 17px;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 10px;
+    transform: translateY(20%);
+    opacity: 0;
+}
+
+.weather
+{
+    display: flex;
+    gap: 40px;
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+    transform: translateX(-20%);
+    opacity: 0;
+    margin-bottom: 15px;
+}
+
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+    transform: translateX(20%);
+    opacity: 0;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin-top: 50px;
+    gap:20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    scale: 0;
+    opacity:0;
+}
+
+.col img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 30px;
+    margin-top: -6px;
+}
+
+#speed {
+    margin-left: 5px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    display: none;
+}
